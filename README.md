@@ -1,1 +1,1 @@
-# rest-with-spring-boot-v2
+# rest-with-spring-boot

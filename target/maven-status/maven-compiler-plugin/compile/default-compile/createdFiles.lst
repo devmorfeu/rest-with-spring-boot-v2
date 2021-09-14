@@ -1,0 +1,11 @@
+br\com\restwithspringboot\service\mapper\PersonMapper.class
+br\com\restwithspringboot\service\PersonService.class
+br\com\restwithspringboot\controller\request\PersonData.class
+br\com\restwithspringboot\controller\PersonController.class
+br\com\restwithspringboot\repository\PersonRepository.class
+br\com\restwithspringboot\exception\HandlerException.class
+br\com\restwithspringboot\exception\ResponseError.class
+br\com\restwithspringboot\service\mapper\PersonMapperImpl.class
+br\com\restwithspringboot\Application.class
+br\com\restwithspringboot\service\entity\Person.class
+br\com\restwithspringboot\config\ValidatorConfig.class
