@@ -1,5 +1,5 @@
 ![Platform Builders](https://img.shields.io/badge/Platform-Builders-yellow)
-[![Build Status](https://app.travis-ci.com/devmorfeu/rest-with-spring-boot-v2.svg?branch=main)](https://travis-ci.com/devmorfeu/rest-with-spring-boot-v2)
+[![Build Status](https://app.travis-ci.com/devmorfeu/rest-with-spring-boot-v2.svg?branch=main)](https://app.travis-ci.com/github/devmorfeu/rest-with-spring-boot-v2)
 [![codecov](https://codecov.io/gh/devmorfeu/rest-with-spring-boot/branch/main/graph/badge.svg?token=7QKNLL90QB)](https://app.codecov.io/gh/devmorfeu/rest-with-spring-boot-v2)
 
 <p align="center">
