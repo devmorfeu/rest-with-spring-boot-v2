@@ -31,8 +31,8 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 #### Testes Unitários
 
 **RestAssured**
-
-**GET**
+  
+  **GET**
 
 ```java
 // ...
@@ -45,9 +45,8 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
                     .body(containsString("BRASIL"));
 // ...
 ```
-
-**POST**
-
+  
+  **POST**
 ```java
 // ...
         var payloadJson = new File("src/test/resources/payload/PersonCreate.json");
@@ -58,8 +57,7 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 // ...
 ```
 
-**PUT**
-
+  **PUT**
 ```java
 // ...
         var payloadJson = new File("src/test/resources/payload/PersonUpdate.json");
@@ -71,12 +69,9 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 ```
 
 **DELETE**
-
 ```java
 // ...
         repository.save(new Person(2L, "RONALDO", "FENOMENO", "BRASIL", "M"));
 
                 when().delete("v1/person/delete/{id}", 2L)
-                .then().log().all().statusCode(NO_CONTENT.value());
-// ...
 ```
