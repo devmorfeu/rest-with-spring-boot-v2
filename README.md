@@ -75,3 +75,14 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 
                 when().delete("v1/person/delete/{id}", 2L)
 ```
+
+#### Conversor dinamico XML / JSON / YAML
+
+**JSON**
+![alt text](img/return-json-example.PNG)
+
+**XML**
+![alt text](img/return-xml-example.PNG)
+
+**YAML**
+![alt text](img/return-yaml-example.PNG)
