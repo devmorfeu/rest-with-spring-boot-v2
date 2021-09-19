@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "5fb8b5ac-d5e1-4518-883f-36b4f7b33adf",
+		"name": "rest-with-spring-boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "math sum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/sum/10/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"sum",
+						"10",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "math subtraction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/subtraction/50/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"subtraction",
+						"50",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "math multiplication",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/multiplication/10/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"multiplication",
+						"10",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "math division",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/division/10/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"division",
+						"10",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "math square root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/squareRoot/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"squareRoot",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "math average",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/average/10/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"average",
+						"10",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

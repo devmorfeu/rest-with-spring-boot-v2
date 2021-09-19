@@ -11,29 +11,29 @@
 </p>
 
 ## Introdução
-   
+
 Aplicação simples simulando uma calculadora;
-   
+
 ## Instalação
 
 * [x] abra o terminal e confirme a versão com o comando `java --version` (a versão 11 ou superior terá que estar instalada).
 * [x] realize o download do [IntelliJ](https://www.jetbrains.com/pt-br/idea/download).
 * [x] baixe o projeto do GitHub com `git clone`.
-   
+
 ### Apêndice
 * [x] para utilizar a API, use o [Postman](https://www.postman.com/downloads)  v8.10.0 ou superior.
-   - `/postman/rest-with-spring-boot-v2-postman_collection.json`
+  - `/postman/rest-with-spring-boot-v2-postman_collection.json`
 
 ## Projeto
 
 Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com/github/devmorfeu/rest-with-spring-boot-v2), [Codecov](https://app.codecov.io/gh/devmorfeu/rest-with-spring-boot-v2)*.
 
-#### Testes Unitários   
+#### Testes Unitários
 
 **RestAssured**
   
   **GET**
-   
+
 ```java
 // ...
         when().request("GET", "v1/person/1")
@@ -47,7 +47,6 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 ```
   
   **POST**
-   
 ```java
 // ...
         var payloadJson = new File("src/test/resources/payload/PersonCreate.json");
@@ -59,7 +58,6 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 ```
 
   **PUT**
-   
 ```java
 // ...
         var payloadJson = new File("src/test/resources/payload/PersonUpdate.json");
@@ -70,13 +68,10 @@ Pequeno DevOps (compilação, cobertura): *[Travis CI](https://app.travis-ci.com
 // ...
 ```
 
-  **DELETE**
-   
+**DELETE**
 ```java
 // ...
         repository.save(new Person(2L, "RONALDO", "FENOMENO", "BRASIL", "M"));
-        
-        when().delete("v1/person/delete/{id}", 2L)
-                .then().log().all().statusCode(NO_CONTENT.value());
-// ...
+
+                when().delete("v1/person/delete/{id}", 2L)
 ```
