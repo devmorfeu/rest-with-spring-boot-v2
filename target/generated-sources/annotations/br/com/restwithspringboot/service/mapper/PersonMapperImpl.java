@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-09-13T21:32:42-0300",
+    date = "2021-09-20T01:56:24-0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.12 (Amazon.com Inc.)"
 )
 @Component
@@ -20,19 +20,12 @@ public class PersonMapperImpl implements PersonMapper {
             return null;
         }
 
-        Long id = null;
-        String firstName = null;
-        String lastName = null;
-        String address = null;
-        String gender = null;
+        Person person = new Person();
 
-        id = request.getId();
-        firstName = request.getFirstName();
-        lastName = request.getLastName();
-        address = request.getAddress();
-        gender = request.getGender();
-
-        Person person = new Person( id, firstName, lastName, address, gender );
+        person.setFirstName( request.getFirstName() );
+        person.setLastName( request.getLastName() );
+        person.setAddress( request.getAddress() );
+        person.setGender( request.getGender() );
 
         return person;
     }
@@ -45,7 +38,7 @@ public class PersonMapperImpl implements PersonMapper {
 
         PersonData personData = new PersonData();
 
-        personData.setId( response.getId() );
+        personData.setPersonId( response.getId() );
         personData.setFirstName( response.getFirstName() );
         personData.setLastName( response.getLastName() );
         personData.setAddress( response.getAddress() );
@@ -74,22 +67,17 @@ public class PersonMapperImpl implements PersonMapper {
             return null;
         }
 
-        String firstName = null;
-        String lastName = null;
-        String address = null;
-        String gender = null;
-        if ( request != null ) {
-            firstName = request.getFirstName();
-            lastName = request.getLastName();
-            address = request.getAddress();
-            gender = request.getGender();
-        }
-        Long id1 = null;
-        if ( id != null ) {
-            id1 = id;
-        }
+        Person person = new Person();
 
-        Person person = new Person( id1, firstName, lastName, address, gender );
+        if ( request != null ) {
+            person.setFirstName( request.getFirstName() );
+            person.setLastName( request.getLastName() );
+            person.setAddress( request.getAddress() );
+            person.setGender( request.getGender() );
+        }
+        if ( id != null ) {
+            person.setId( id );
+        }
 
         return person;
     }

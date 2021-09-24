@@ -27,7 +27,7 @@ import static org.springframework.http.HttpStatus.*;
         webEnvironment = RANDOM_PORT,
         properties = {"isTest=true"}
 )
-public class PersonControllerTest {
+public class PersonControllerTestF {
 
     @Autowired
     private PersonRepository repository;

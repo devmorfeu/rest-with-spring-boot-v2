@@ -10,6 +10,7 @@ public interface PersonMapper {
 
     Person requestToEntity(PersonData request);
 
+    @Mapping(target = "personId",   source = "id")
     PersonData entityToResponse(Person response);
 
     Iterable<PersonData> listEntityToListResponse(Iterable<Person> list);

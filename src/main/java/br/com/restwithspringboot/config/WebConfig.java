@@ -1,11 +1,13 @@
 package br.com.restwithspringboot.config;
 
 import br.com.restwithspringboot.converter.YamlJackson2HttpMessageConverter;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import java.util.List;
 
@@ -18,6 +20,11 @@ public class WebConfig implements WebMvcConfigurer {
     private static final String XML = "xml";
     private static final String X_YAML = "x-yaml";
     private static final MediaType APPLICATION_X_YAML = valueOf("application/x-yaml");
+
+    @Bean
+    public InternalResourceViewResolver defaultViewResolver() {
+        return new InternalResourceViewResolver();
+    }
 
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(new YamlJackson2HttpMessageConverter());
