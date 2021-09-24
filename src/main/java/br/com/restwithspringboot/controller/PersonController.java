@@ -18,12 +18,12 @@ public class PersonController {
 
     private final PersonService service;
 
-    @GetMapping(value = "/{id}", produces = {"application/json", "application/xml", "application/x-yaml"})
-    public ResponseEntity<PersonData> findById(@PathVariable("id") Long id){
+    @GetMapping(value = "/{personId}", produces = {"application/json", "application/xml", "application/x-yaml"})
+    public ResponseEntity<PersonData> findById(@PathVariable("personId") Long personId){
 
-        var response = service.findPersonById(id);
+        var response = service.findPersonById(personId);
 
-        response.add(linkTo(methodOn(PersonController.class).findById(id)).withSelfRel());
+        response.add(linkTo(methodOn(PersonController.class).findById(personId)).withSelfRel());
 
         return status(OK).body(response);
     }
